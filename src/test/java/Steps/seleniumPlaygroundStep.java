@@ -33,4 +33,22 @@ public class seleniumPlaygroundStep extends ScenarioSteps {
     public void RunJavaScriptExecutor(){
         seleniumPlaygroundPage.RunJavaScriptExecutor();
     }
+    public void RunJavaScriptFunctionAndTakeValueOfIt(){
+        seleniumPlaygroundPage.RunJavaScriptFunctionAndTakeValueOfIt();
+    }
+    public void MarkRadioButtonOnFormForWrittenBookToYes(){
+        seleniumPlaygroundPage.MarkRadioButtonOnFormForWrittenBookToYes();
+    }
+    public void GetTextFromRedBox(){
+        seleniumPlaygroundPage.GetTextFromRedBox();
+    }
+    public void GuessWhichBoxIsOnTop(){
+        seleniumPlaygroundPage.GuessWhichBoxIsOnTop();
+    }
+    public void SetHightAndWeidthOfBrowser(){
+        seleniumPlaygroundPage.SetHightAndWeidthOfBrowser();
+    }
+    public void AnswerSlot13DependingOnId(){
+        seleniumPlaygroundPage.AnswerSlot13DependingOnId();
+    }
 }

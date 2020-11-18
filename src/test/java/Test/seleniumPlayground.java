@@ -41,4 +41,28 @@ public class seleniumPlayground {
     public void whenRunJavaScriptExecutor(){
         seleniumPlaygroundStep.RunJavaScriptExecutor();
     }
+    @When("i Run JavaScript function as: got_return_from_js_function from your Selenium script, take returned value and place it in answer slot #8")
+    public void whenRunJavaScriptFunctionAndTakeValueOfIt(){
+        seleniumPlaygroundStep.RunJavaScriptFunctionAndTakeValueOfIt();
+    }
+    @When("i Mark radio button on form for written book to Yes")
+    public void whenMarkRadioButtonOnFormForWrittenBookToYes(){
+        seleniumPlaygroundStep.MarkRadioButtonOnFormForWrittenBookToYes();
+    }
+    @When("i Get the text from the Red Box and place it in answer slot #10")
+    public void whenGetTextFromRedBox(){
+        seleniumPlaygroundStep.GetTextFromRedBox();
+    }
+    @When("i guess Which box is on top orange or green -- place correct color in answer slot #11")
+    public void whenIGuessWhichBoxIsOnTop(){
+        seleniumPlaygroundStep.GuessWhichBoxIsOnTop();
+    }
+    @When("i Set browser width to 850 and height to 650")
+    public void whenSetHightAndWeidthOfBrowser(){
+        seleniumPlaygroundStep.SetHightAndWeidthOfBrowser();
+    }
+    @When("i Type into answer slot 13 yes or no depending on whether item by id of ishere is on the page")
+    public void whenAnswerSlot13DependingOnId(){
+        seleniumPlaygroundStep.AnswerSlot13DependingOnId();
+    }
 }

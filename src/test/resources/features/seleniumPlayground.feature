@@ -19,3 +19,15 @@ Feature: selenium playground
     When i Find red box on its page find class applied to it, and enter into answer box #6
 #    number 7
     When i Run JavaScript function as: ran_this_js_function from your Selenium script
+#    number 8
+    When i Run JavaScript function as: got_return_from_js_function from your Selenium script, take returned value and place it in answer slot #8
+#    number 9
+    When i Mark radio button on form for written book to Yes
+#    number 10
+    When i Get the text from the Red Box and place it in answer slot #10
+#    number 11
+    When i guess Which box is on top orange or green -- place correct color in answer slot #11
+#    number 12
+    When i Set browser width to 850 and height to 650
+#    number 13
+    When i Type into answer slot 13 yes or no depending on whether item by id of ishere is on the page
