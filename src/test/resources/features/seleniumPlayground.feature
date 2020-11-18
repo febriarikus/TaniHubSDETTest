@@ -31,3 +31,11 @@ Feature: selenium playground
     When i Set browser width to 850 and height to 650
 #    number 13
     When i Type into answer slot 13 yes or no depending on whether item by id of ishere is on the page
+#    number 14
+    When i Type into answer slot 14 yes or no depending on whether item with id of purplebox is visible
+#    number 15 and number 16
+    When waiting game and Click OK on the confirm after completing task 15
+#    number 17
+    When i click the submit button on the form
+#    results
+    Then i get the result

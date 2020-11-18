@@ -3,6 +3,8 @@ package Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 import Pages.seleniumPlaygroundPage;
 
+import java.io.IOException;
+
 public class seleniumPlaygroundStep extends ScenarioSteps {
     seleniumPlaygroundPage seleniumPlaygroundPage;
 
@@ -50,5 +52,17 @@ public class seleniumPlaygroundStep extends ScenarioSteps {
     }
     public void AnswerSlot13DependingOnId(){
         seleniumPlaygroundPage.AnswerSlot13DependingOnId();
+    }
+    public void AnswerSlot14DependingOnIdOnPurpleBoxIsVisibleOrNot(){
+        seleniumPlaygroundPage.AnswerSlot14DependingOnIdOnPurpleBoxIsVisibleOrNot();
+    }
+    public void WaitingGame(){
+        seleniumPlaygroundPage.WaitingGame();
+    }
+    public void ClickSubmitButton(){
+        seleniumPlaygroundPage.ClickSubmitButton();
+    }
+    public void GetTheResult()throws IOException {
+        seleniumPlaygroundPage.GetTheResult();
     }
 }

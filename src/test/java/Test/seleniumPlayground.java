@@ -2,8 +2,11 @@ package Test;
 
 import Steps.seleniumPlaygroundStep;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
+
+import java.io.IOException;
 
 public class seleniumPlayground {
     @Steps
@@ -64,5 +67,21 @@ public class seleniumPlayground {
     @When("i Type into answer slot 13 yes or no depending on whether item by id of ishere is on the page")
     public void whenAnswerSlot13DependingOnId(){
         seleniumPlaygroundStep.AnswerSlot13DependingOnId();
+    }
+    @When("i Type into answer slot 14 yes or no depending on whether item with id of purplebox is visible")
+    public void whenAnswerSlot14DependingOnIdOnPurpleBoxIsVisibleOrNot(){
+        seleniumPlaygroundStep.AnswerSlot14DependingOnIdOnPurpleBoxIsVisibleOrNot();
+    }
+    @When("waiting game and Click OK on the confirm after completing task 15")
+    public void whenWaitingGame(){
+        seleniumPlaygroundStep.WaitingGame();
+    }
+    @When("i click the submit button on the form")
+    public void whenIClickSubmitButton(){
+        seleniumPlaygroundStep.ClickSubmitButton();
+    }
+    @Then("i get the result")
+    public void thenIGetTheResult()throws IOException {
+        seleniumPlaygroundStep.GetTheResult();
     }
 }
