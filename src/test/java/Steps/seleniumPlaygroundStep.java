@@ -21,4 +21,16 @@ public class seleniumPlaygroundStep extends ScenarioSteps {
     public void SetOccupation(){
         seleniumPlaygroundPage.SetOccupation();
     }
+    public void CountSizeOfBlueBox(){
+        seleniumPlaygroundPage.CountSizeOfBlueBox();
+    }
+    public void ClickLinkThatSaysClickMe(){
+        seleniumPlaygroundPage.ClickLinkThatSaysClickMe();
+    }
+    public void FindClassOfRedBox(){
+        seleniumPlaygroundPage.FindClassOfRedBox();
+    }
+    public void RunJavaScriptExecutor(){
+        seleniumPlaygroundPage.RunJavaScriptExecutor();
+    }
 }

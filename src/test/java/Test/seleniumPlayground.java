@@ -25,4 +25,20 @@ public class seleniumPlayground {
     public void thenSetOccupation(){
         seleniumPlaygroundStep.SetOccupation();
     }
+    @When("i count number of blue_boxes on page after form and enter into answer box #4")
+    public void whenCountSizeOfBlueBox(){
+        seleniumPlaygroundStep.CountSizeOfBlueBox();
+    }
+    @When("i click link that says click me")
+    public void whenClickLinkThatSaysClickMe(){
+        seleniumPlaygroundStep.ClickLinkThatSaysClickMe();
+    }
+    @When("i Find red box on its page find class applied to it, and enter into answer box #6")
+    public void whenFindClassOfRedBox(){
+        seleniumPlaygroundStep.FindClassOfRedBox();
+    }
+    @When("i Run JavaScript function as: ran_this_js_function from your Selenium script")
+    public void whenRunJavaScriptExecutor(){
+        seleniumPlaygroundStep.RunJavaScriptExecutor();
+    }
 }
