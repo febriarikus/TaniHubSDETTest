@@ -62,15 +62,13 @@ public class UIAutomationPage extends PageObject {
         Product.click();
         AddToCart.click();
     }
-    @FindBy(xpath = "//div[starts-with(@class,'inputQuantity-')]")
-    WebElement InputQuantity;
     @FindBy(xpath = "//img[@alt='Chat']")
     WebElement Keranjang;
     @FindBy(xpath = "//p[@class='text-component product-name is-regular  is-small']")
     WebElement Item;
-    public void AssertItemHasBeenAddedToCart(){
-        Assert.assertTrue(InputQuantity.isDisplayed());
+    public void AssertItemHasBeenAddedToCart()throws InterruptedException{
         Keranjang.click();
+        Thread.sleep(3000);
         Assert.assertEquals("Rose Brand Minyak Goreng 2 L Karton",Item.getText());
     }
 

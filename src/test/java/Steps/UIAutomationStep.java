@@ -13,7 +13,7 @@ public class UIAutomationStep extends ScenarioSteps {
         uiAutomationPage.ClickSignInIcon();
         Thread.sleep(3000);
         uiAutomationPage.InputEmail();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         uiAutomationPage.InputPassword();
         uiAutomationPage.ClickSignIn();
     }
@@ -22,13 +22,15 @@ public class UIAutomationStep extends ScenarioSteps {
         uiAutomationPage.SearchMinyakGorengInSearchBox();
     }
 
-    public void AddThisItemToCart(){
+    public void AddThisItemToCart()throws InterruptedException{
         uiAutomationPage.AddThisItemToCart();
+        Thread.sleep(3000);
         uiAutomationPage.AssertItemHasBeenAddedToCart();
     }
 
-    public void CheckoutTheItem(){
+    public void CheckoutTheItem()throws InterruptedException{
         uiAutomationPage.CheckoutTheItem();
+        Thread.sleep(3000);
         uiAutomationPage.AssertItemHasBeenCheckoutSuccessfully();
     }
 }

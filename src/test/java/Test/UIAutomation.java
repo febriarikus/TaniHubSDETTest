@@ -22,12 +22,12 @@ public class UIAutomation {
     }
 
     @When("user add this item to cart")
-    public void whenUserAddThisItemToCart(){
+    public void whenUserAddThisItemToCart()throws InterruptedException{
         uiAutomationStep.AddThisItemToCart();
     }
 
     @Then("user checkout the item")
-    public void thenUserCheckoutTheItem(){
+    public void thenUserCheckoutTheItem()throws InterruptedException{
         uiAutomationStep.CheckoutTheItem();
     }
 }
