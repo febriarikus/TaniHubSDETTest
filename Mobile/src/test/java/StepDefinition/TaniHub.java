@@ -2,6 +2,7 @@ package StepDefinition;
 
 import Utils.Base;
 import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -51,5 +52,10 @@ public class TaniHub extends Base {
     public void thenGetTheDetailOfProduct(String product){
         takeStepScreenShot(scenario,driver);
         Assert.assertEquals(product,driver.findElement(By.xpath("(//android.widget.TextView[@index='2'])[position()=1]")).getText());
+    }
+
+    @After
+    public void close_app(){
+        driver.closeApp();
     }
 }
